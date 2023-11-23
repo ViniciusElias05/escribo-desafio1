@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Desafio 1</title>
+</head>
+<body>
+    <header><h1>Desafio 1</h1></header>
+    <main>
+        <div class="container">
+            <input type="number" id="input">
+            <button id="btn">SOMAR</button>
+            <div class="result">
+                <h3>Resultado:</h3>
+                <div class="output" id="output"></div>
+            </div>
+        </div>
+            
+    </main>
+</body>
+<script src="assets/js/script.js"></script>
+<script>
+    const generateResult =()=>{
+        const value = document.getElementById("input").value;
+        const result = sumDividedBy3Or5(value);
+        document.getElementById("output").innerHTML = result;
+    }
+    const btn = document.getElementById("btn");
+    btn.addEventListener('click', generateResult);
+    window.onkeydown = event => {
+        if(event.keyCode == 13){
+            generateResult();
+        }
+    }
+</script>
+</html>
