@@ -2,6 +2,7 @@
 
 ### Este portifólio foi reservado para solucinar o seguinte desafio:
 - Implementar uma função que receba um número inteiro positivo e retorne o somatório de todos os valores inteiros divisíveis por 3 ou 5 que sejam inferiores ao número passado.
+- Solução foi feita com a linguagem JavaScript.
 
 ### Como testar:
 - Acesse esse link: https://viniciuselias05.github.io/escribo-desafio1/
